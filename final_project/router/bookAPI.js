@@ -11,6 +11,10 @@ async function getAllBooks() {
 
 getAllBooks();
 
+console.log(
+  "------------------------------------------------------------------------"
+);
+
 async function getBookByISBN(isbn) {
   try {
     const response = await axios.get(`http://localhost:5000/isbn/${isbn}`);
